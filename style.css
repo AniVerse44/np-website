@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: url("pattern-7451714_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav{
+    margin-bottom: 19px;
+}
+.card {
+    background: none;
+    backdrop-filter: blur(40px);
+    color: white;
+    margin-left: 19px;
+    display: inline-block;
+    margin-bottom: 19px;
+}
+img{
+    height: 210px;
+}
