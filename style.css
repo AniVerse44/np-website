@@ -14,13 +14,83 @@ nav{
     margin-bottom: 19px;
 }
 .card {
+    
     background: none;
     backdrop-filter: blur(40px);
     color: white;
     margin-left: 19px;
     display: inline-block;
     margin-bottom: 19px;
+    animation-name: blu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 img{
     height: 210px;
+    left: 49px;
+    display: inline-block;
 }
+
+@keyframes blu {
+ 0%{
+    backdrop-filter: blur(0px);
+ }
+ 25%{
+    backdrop-filter: blur(5px);
+ }
+ 
+ 50%{
+    backdrop-filter: blur(10px);
+ }
+
+ 75%{
+    backdrop-filter: blur(75px);
+ }
+ 100%{
+    backdrop-filter: blur(100px);
+ }
+}
+.heading{
+    color:white;
+    text-align: justify;
+    margin: 0 auto;
+    width: 30em;
+    font-size: larger;
+}
+.typewriter-effect {
+    left: 50px;
+    color:aliceblue;
+    font-family: monospace;
+  }
+  
+  .typewriter-effect > .text {
+    max-width: 0;
+    animation: typing 3s steps(var(--characters)) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .typewriter-effect:after {
+    content: " |";
+    animation: blink 1s infinite;
+    animation-timing-function: step-end;
+  }
+  
+  @keyframes typing {
+    75%,
+    100% {
+      max-width: calc(var(--characters) * 1ch);
+    }
+  }
+  
+  @keyframes blink {
+    0%,
+    75%,
+    100% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+  }
+  
