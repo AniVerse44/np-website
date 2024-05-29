@@ -31,25 +31,6 @@ img{
     display: inline-block;
 }
 
-@keyframes blu {
- 0%{
-    backdrop-filter: blur(0px);
- }
- 25%{
-    backdrop-filter: blur(5px);
- }
- 
- 50%{
-    backdrop-filter: blur(10px);
- }
-
- 75%{
-    backdrop-filter: blur(75px);
- }
- 100%{
-    backdrop-filter: blur(100px);
- }
-}
 .heading{
     color:white;
     text-align: justify;
@@ -75,7 +56,26 @@ img{
     animation: blink 1s infinite;
     animation-timing-function: step-end;
   }
-  
+
+@keyframes blu {
+ 0%{
+    backdrop-filter: blur(0px);
+ }
+ 25%{
+    backdrop-filter: blur(5px);
+ }
+ 
+ 50%{
+    backdrop-filter: blur(10px);
+ }
+
+ 75%{
+    backdrop-filter: blur(75px);
+ }
+ 100%{
+    backdrop-filter: blur(100px);
+ }
+}
   @keyframes typing {
     75%,
     100% {
