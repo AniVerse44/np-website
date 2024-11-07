@@ -1,105 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    //Auther: SUSHANT
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AniNotes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-
-    </head>
-
+    <title>C Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">AniNossstes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Maths</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Science
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Physics</a></li>
-                            <li><a class="dropdown-item" href="#">Chemistry</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Biology</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">English</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    
-<center><h2><strong class="heading">Welcome to:</strong></h2>
-<div class="typewriter-effect">
-  <div class="text" id="typewriter-text"></div>
-</center>
-<div class="info">
-
-    <div class="card" style="width: 18rem;">
-        <img src="https://i.ytimg.com/vi/B_ketdzJtY8/maxresdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Organic Chemistry</h5>
-          <p class="card-text">In this Section:<br>- Alkane, ALkene, Alkyne<br>- Isomers<br>- Reactivity<br>....
-          </p>
-          <a href="#" class="btn btn-primary">Learn This</a>
-        </div>
-      </div>
-    <div class="card" style="width: 18rem;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKryfd-hJiXwMaTLClcsgMNjCjzVZdbxx2xDhfwI7zLw&s" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Inorganic Chemistry</h5>
-          <p class="card-text">In this Section:<br>- Introduction to Inorganic<br>- Reactivity of it<br>- Some Exmaples<br>....
-          </p>
-          <a href="#" class="btn btn-primary">Learn This</a>
-        </div>
-      </div>
-    <div class="card" style="width: 18rem;">
-        <img src="https://i.ytimg.com/vi/B_ketdzJtY8/maxresdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Organic Chemistry</h5>
-          <p class="card-text">In this Section:<br>- Alkane, ALkene, Alkyne<br>- Isomers<br>- Reactivity<br>....
-          </p>
-          <a href="#" class="btn btn-primary">Learn This</a>
-        </div>
-      </div>
+    <div class="selector">
+        <label for="code">Select Code!</label>
+        <select name="code" id="code">
+            <option value="1">Calculator Code</option>
+            <option value="2">Fibonacci Series Code</option>
+            <option value="3">Banking System Code</option>
+        </select>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-          <script src="script.js">
-          const typeWriter = document.getElementById('typewriter-text');
-const text = '<h4>AniNotes, We provide free Notes Here :D</h4>';
+    <div class="codes">
+        <div class="head">
+            <button>File</button>
+            <button>Options</button>
+            <button>Execute</button>
+        </div>
 
-typeWriter.innerHTML = text;
-typeWriter.style.setProperty('--characters', text.length);
+        <div class="code">
+<pre>
+#include &lt;stdio.h&gt;
 
-      </script>
+void add(float a, float b) {
+    printf("Result: %.2f\n", a + b);
+}
+
+void subtract(float a, float b) {
+    printf("Result: %.2f\n", a - b);
+}
+
+void multiply(float a, float b) {
+    printf("Result: %.2f\n", a * b);
+}
+
+void divide(float a, float b) {
+    if (b == 0) {
+        printf("Error: Division by zero is not allowed.\n");
+    } else {
+        printf("Result: %.2f\n", a / b);
+    }
+}
+
+int main() {
+    int choice;
+    float num1, num2;
+
+    while (1) {
+        printf("\nSelect operation:\n");
+        printf("1. Add\n");
+        printf("2. Subtract\n");
+        printf("3. Multiply\n");
+        printf("4. Divide\n");
+        printf("5. Exit\n");
+        printf("Enter choice (1/2/3/4/5): ");
+        scanf("%d", &choice);
+
+        if (choice == 5) {
+            printf("Exiting the calculator. Goodbye!\n");
+            break;
+        }
+
+        if (choice < 1 || choice > 5) {
+            printf("Invalid input! Please enter a valid choice.\n");
+            continue;
+        }
+
+        printf("Enter first number: ");
+        scanf("%f", &num1);
+        printf("Enter second number: ");
+        scanf("%f", &num2);
+
+        switch (choice) {
+            case 1:
+                add(num1, num2);
+                break;
+            case 2:
+                subtract(num1, num2);
+                break;
+            case 3:
+                multiply(num1, num2);
+                break;
+            case 4:
+                divide(num1, num2);
+                break;
+            default:
+                printf("Invalid operation.\n");
+        }
+    }
+
+    return 0;
+}
+</pre>
+        </div>
+    </div>
 </body>
-
 </html>
